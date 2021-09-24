@@ -1,15 +1,13 @@
 import { Injectable } from "@angular/core";
-import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import { AuthService } from "./auth.service";
-import { catchError, map, tap } from "rxjs/operators";
-import { Vaccine } from "../models/vaccines";
-import { Observable } from "rxjs";
+import { map} from "rxjs/operators";
 
-const httpOptions = {
-  headers: new HttpHeaders({
-    Authorization: "Bearer " + localStorage.getItem("token")
-  })
-};
+// const httpOptions = {
+//   headers: new HttpHeaders({
+//     Authorization: "Bearer " + localStorage.getItem("token")
+//   })
+// };
 @Injectable({
   providedIn: "root"
 })
@@ -24,8 +22,7 @@ export class AdminService {
     return this.http
       .put(
         this.adminsUrl + "update/" + this.authService.decodedToken.nameid,
-        formData,
-        httpOptions
+        formData
       )
       .pipe(
         map((response: any) => {

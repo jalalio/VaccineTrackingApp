@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { AlertService } from '@full-fledged/alerts';
 import { Vaccine } from 'src/app/shared/models/vaccines';
-import { AdminService } from 'src/app/shared/services/admin.service';
 import { ProgressBarService } from 'src/app/shared/services/progress-bar.service';
 import { VaccineService } from 'src/app/shared/services/vaccine.service';
 
