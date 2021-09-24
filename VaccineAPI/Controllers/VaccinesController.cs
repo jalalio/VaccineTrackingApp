@@ -28,7 +28,7 @@ namespace VaccineAPI.Controllers
         //[Authorize(AuthenticationSchemes = "Bearer")]
         [HttpGet]
         //[Authorize(Roles = "Admin")]
-        //[Authorize(Policy = "AdminPolicy")]
+        [Authorize(Policy = "AdminPolicy")]
         public async Task<ActionResult<IEnumerable<Vaccine>>> GetVaccineItems()
         {
             return await _context.Vaccines.ToListAsync();
