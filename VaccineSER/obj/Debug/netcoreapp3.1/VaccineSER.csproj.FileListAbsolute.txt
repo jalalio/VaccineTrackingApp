@@ -1,0 +1,14 @@
+C:\Users\User\Downloads\VaccineTrackingApp\VaccineAPI\VaccineSER\obj\Debug\netcoreapp3.1\VaccineSER.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\VaccineTrackingApp\VaccineAPI\VaccineSER\obj\Debug\netcoreapp3.1\VaccineSER.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\VaccineTrackingApp\VaccineAPI\VaccineSER\obj\Debug\netcoreapp3.1\VaccineSER.AssemblyInfo.cs
+C:\Users\User\Downloads\VaccineTrackingApp\VaccineAPI\VaccineSER\obj\Debug\netcoreapp3.1\VaccineSER.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\VaccineTrackingApp\VaccineSER\VaccineSER\obj\Debug\netcoreapp3.1\VaccineSER.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\VaccineTrackingApp\VaccineSER\VaccineSER\obj\Debug\netcoreapp3.1\VaccineSER.AssemblyInfoInputs.cache
+C:\Users\User\Downloads\VaccineTrackingApp\VaccineSER\VaccineSER\obj\Debug\netcoreapp3.1\VaccineSER.AssemblyInfo.cs
+C:\Users\User\Downloads\VaccineTrackingApp\VaccineSER\VaccineSER\obj\Debug\netcoreapp3.1\VaccineSER.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\VaccineTrackingApp\VaccineSER\VaccineSER\obj\Debug\netcoreapp3.1\VaccineSER.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Downloads\VaccineTrackingApp\VaccineAPI\VaccineSER\bin\Debug\netcoreapp3.1\VaccineSER.deps.json
+C:\Users\User\Downloads\VaccineTrackingApp\VaccineAPI\VaccineSER\bin\Debug\netcoreapp3.1\VaccineSER.dll
+C:\Users\User\Downloads\VaccineTrackingApp\VaccineAPI\VaccineSER\bin\Debug\netcoreapp3.1\VaccineSER.pdb
+C:\Users\User\Downloads\VaccineTrackingApp\VaccineAPI\VaccineSER\obj\Debug\netcoreapp3.1\VaccineSER.dll
+C:\Users\User\Downloads\VaccineTrackingApp\VaccineAPI\VaccineSER\obj\Debug\netcoreapp3.1\VaccineSER.pdb
