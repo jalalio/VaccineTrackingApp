@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-md-6 offset-md-3 mt-5">
+        <h3>Vaccines Order Form</h3>
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+            <div class="form-group">
+                <label for="vaccineName" class="form-label">Vaccine Type</label>
+                <select name="vaccineId" ngModel required #vaccineId="ngModel"
+                class="form-control" id="vaccineName">
+                  <option value="" disabled selected hidden>Select Type</option>
+                  <option *ngFor="let vaccine of vaccines" [value]="vaccine.vaccineId">{{vaccine.vaccineName}}</option>
+                </select>
+                <!--
+                <p>vaccineId: {{ vaccineId.value }}</p>
+                -->
+              </div>
+
+              <div *ngFor="let vaccine of vaccines">
+                <div *ngIf="vaccineId.value == vaccine.vaccineId"  class="p-3">
+                  <p>Vaccine name:<b> {{ vaccine.vaccineName }}</b></p>
+                  <p>Manufacturer:<b> {{ vaccine.manufacturer }}</b></p>
+                  <p>Storage Temperature:<b> {{ vaccine.storageTemperature }}</b></p>
+                  <p>Doses Requirement:<b> {{ vaccine.doses }}</b></p>
+                  <p>Vaccine Type:<b> {{ vaccine.type }}</b></p>
+                  <p>Administration Method:<b> {{ vaccine.administrationMethod }}</b></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="orderQuantity" class="form-label">Vaccine Quantity</label>
+                <input type="number" name="quantity" ngModel required #quantity="ngModel"
+                class="form-control" id="orderQuantity"
+                placeholder="Vaccine Quantity">
+            </div>
+              <button type="submit" [disabled]="f.invalid"
+              class="btn btn-primary">Submit Order</button>
+        </form>
+    </div>
+</div>

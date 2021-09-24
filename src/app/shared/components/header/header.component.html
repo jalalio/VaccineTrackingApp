@@ -1,0 +1,71 @@
+<ng-progress id="progressBar"
+             [color]="progressBar.currentColor"
+             [thick]="true"></ng-progress>
+<ff-alerts></ff-alerts>
+<div class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark headerNav"
+      role="navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" 
+          [routerLink]="['']"><i class="fas fa-search-location"></i> SA Vaccine Tracker</a>
+          <!--
+          <p>Loggedin?: {{ authService.loggedIn() | json }}</p>
+          -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item" *ngIf="!authService.loggedIn();">
+                <a class="nav-link"
+                [routerLink]="['/login']" routerLinkActive="active">Login</a> 
+              </li>
+              <li class="nav-item" *ngIf="!authService.loggedIn();">
+                <a class="nav-link"
+                [routerLink]="['/register']" routerLinkActive="active">Register</a>
+              </li>
+
+              <li class="nav-item" *ngIf="authService.loggedIn();">
+                <a class="nav-link"
+                [routerLink]="['/order']" routerLinkActive="active">Order</a> 
+              </li>
+              <li class="nav-item" *ngIf="authService.loggedIn();">
+                <a class="nav-link"
+                [routerLink]="['/order-history']" routerLinkActive="active">Order History</a>
+              </li>
+
+              <li class="nav-item profile-dropdown-container"
+                dropdown *ngIf="authService.loggedIn();">
+                <!-- <span>
+                  <img src="{{authService.currentUser?.profileImageUrl}}"
+                    alt="Profile Image">
+                </span> -->
+                <a class="nav-link" id="button-basic"
+                  dropdownToggle >
+                  <!-- Logged in as  -->
+                  {{authService.decodedToken?.unique_name}}
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" id="dropdown-basic" 
+                    role="menu" *dropdownMenu>
+                  <li role="menuitem">
+                    <a disable class="dropdown-item"
+                      [routerLink]="['admin-edit']"
+                      routerLinkActive="active">Edit Profile</a></li>
+                  <li role="menuitem">
+                    <a class="dropdown-item"
+                    [routerLink]="['reset-password']"
+                    routerLinkActive="active">Reset Password</a></li>
+                  <li role="menuitem">
+                    <a class="dropdown-item"
+                    [routerLink]="['login']"
+                    routerLinkActive="active"
+                    (click)="logout();">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+</div>

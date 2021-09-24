@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootswatch/dist/Superhero/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/Superhero/bootswatch";
+
+option, .form-control, .ng-valid[required], .ng-valid.required {
+  color: white;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow:0 0 0 50px var(--bs-body-bg) inset; /* Change the color to your own background color */
+  box-shadow: 0 0 0 50px var(--bs-body-bg) inset;
+  -webkit-text-fill-color: white;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px var(--bs-body-bg) inset;/*your box-shadow*/
+  box-shadow: 0 0 0 50px var(--bs-body-bg) inset;
+  -webkit-text-fill-color: white;
+} 
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid $success; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid $danger; /* red */
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
